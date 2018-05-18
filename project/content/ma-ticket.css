@@ -1,0 +1,136 @@
+.tk-bc{
+    height: 180%;
+    width: 100%;
+    display: table;
+}
+.tk-align-content{
+    margin-top: 5%;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+}
+.tk-container{
+    width: 70%;
+    height: 400px;
+    display: table;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+.tk-group{
+    width: 100%;
+    padding: 30px 0 30px 0;
+}
+.tk-ticket{
+    width: 100%;
+    padding: 20px 10px;
+    float: left;
+    background-color: #f6f6f6;
+}
+.tk-shirt{
+    float: left;
+    width: 100%;
+    padding: 20px 10px 50px 10px;
+}
+.tk-payment{
+    width: 100%;
+    padding: 40px 10px;
+}
+.tk-opt{
+    float: left;
+    width: 200px;
+    display: table;
+    padding: 20px 10px;
+    font-size: 18px;
+    margin: 15px;
+    margin-left: 0;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tk-opt:hover, .bt-tk:hover{
+    background-color: darkblue;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tk-opt p{
+    font-size: 16px;
+    font-family: 'Roboto COndensed Light';
+    margin: 0;
+    color: white;
+    cursor: pointer;
+}
+.tk-opt label{
+    font-size: 18px;
+    font-family: 'Roboto COndensed Regular';
+    color: white;
+    cursor: pointer;
+}
+.tk-payment h3{
+    margin: 0;
+}
+.tk-pay-total{
+    margin: 0;
+}
+.tk-pay-qtd{
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 10%;
+}
+.tk-pay-qtd p{
+    margin-left: 30px;
+    display: inline;
+}
+.tk-qtd-ticket{
+    float: left;
+}
+.tk-qtd-ticket label{
+    font-family: 'Roboto Condensed Regular'; 
+}
+.tk-qtd-ticket p, span{
+    font-size: 16px; 
+}
+.bt-tk{
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto Condensed Regular';
+    text-transform: uppercase;
+    margin: 20px;
+    margin-left: 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bt-remove{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bt-remove:hover{
+    background-color: darkred;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.bt-remove div{
+    height: 2px;
+    width: 70%;
+    background-color: white;
+}
+.tk-title-text{
+    font-size: 20px !important;
+    font-family: 'Roboto Condensed Bold' !important;
+    margin-bottom: 10px !important;
+}

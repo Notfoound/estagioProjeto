@@ -1,0 +1,33 @@
+Projeto: Uefa Final Kyiv 2018
+Autor: Matheus Silvério
+Ano: 2018
+Status: Em desenvolvimento
+
+_____________________________________________________________________
+
+Observações:
+
+*As versões são denominadas pela seguinte forma:
+0. 	-> projeto atual ( primeiro, segundo..);
+0.0 	-> business value concluídos (explicado no SCRUM);
+0.0.0 	-> tarefas concluídas;
+
+
+Este arquivo é referente as versões deste projeto, ao atualizar
+algo, de acordo com as observações acima, deve-se atualizar estas
+notas, para que quaisquer pessoas que estiverem com este projeto
+possa entender o que foi feito até então e a versão atual do projeto.
+Caso não entenda pergunte ao autor e tire suas dúvidas.
+
+_____________________________________________________________________
+
+Versão Anteriores:
+0.0.1 - Layout concluído e arquivos necessários concluídos (7mb)
+0.0.2 - Index finalizado. Páginas Adversas também foram criadas (5mb)
+0.0.3 - Página Login finalizada (5.32mb)
+0.0.4 - Página Tickets finalizada (5mb)
+0.1.0 - Todas as tarefas do Business value - 100 foram finalizadas.
+
+Versão Atual: 0.1.0
+Versão em Desenvolvimento: 0.1.1 
+

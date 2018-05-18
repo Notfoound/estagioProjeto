@@ -1,0 +1,28 @@
+body{
+    background-image: url(images/bg-04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lg-container{
+    padding: 5% 30px 5% 30px;
+    display: table;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+}
+.form-control{
+    border: none;
+    padding: 5px;
+    color: #333;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    font-family: 'Roboto Condensed Light';
+}

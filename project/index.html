@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+
+    <title>UEFA | Final Kyiv 2018</title>
+
+    <!-- Meta TAGS -->
+    <meta name='description' content='site demonstrativo com intuíto de informar o usuário e vender ingressos sobre o jogo'>
+    <meta name='author' content='Matheus - Koddex'>
+    <meta name='robots' content='index, follow'>
+    <meta name='googlebot' content='index, follow'>
+    <meta name='distribution' content='global'>
+    <meta name='revisit-after' content='period'>
+    <meta name='rating' content='general'>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+    <meta name='format-detection' content='telephone=no'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+
+    <!-- Links - CSS -->
+    <link rel="stylesheet" type="text/css" href="content/ma-main.css">
+    
+    <link rel='shortcut icon' type='/image/png' href=''/>
+    
+    <!-- Vue.JS - include -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    
+    <!-- Caso não tenha acesso a internet -->
+    <script src="scripts/vue.js"></script>
+    
+</head>
+<body>
+    
+    <!-- Block Content -->
+    <div id="bc" class="block-content">
+        <div v-html="first" class="content-1"></div>
+        <div v-html="second" class="content-2"></div>
+        <div v-html="third" class="content-2"></div>
+        <div v-html="fourth" class="content-4"></div>
+        <div v-html="fifth" class="content-5"></div>
+        <div v-html="sixth" class="content-6"></div>
+        <footer v-html="footer"></footer>
+    </div>
+    
+</body>
+
+<script src="scripts/ma-main.js"></script>
+<!-- Script - framework -->
+<script src="scripts/vue-index.js"></script>
+

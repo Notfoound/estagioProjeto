@@ -1,0 +1,582 @@
+/* Normalize page */
+::-webkit-scrollbar { 
+    overflow: -moz-scrollbars-none;
+}
+a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-decoration: none
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: white;
+}
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+@font-face {
+     font-family: 'Roboto Condensed Light';
+     src: url('fonts/RobotoCondensed-Light.ttf');
+}
+@font-face {
+     font-family: 'Roboto Condensed Regular';
+     src: url('fonts/RobotoCondensed-Regular.ttf');
+}
+@font-face {
+     font-family: 'Roboto Condensed Bold';
+     src: url('fonts/RobotoCondensed-Bold.ttf');
+}
+
+html, body{ 
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 270px;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto Condensed Light';
+    font-size: 18px;
+    color: #333;
+}
+body {
+	overflow-x: hidden;
+}
+
+
+
+
+/* Texts */
+h1{
+    
+}
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed Bold';
+    color: white;
+}
+h3{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed Regular';
+    color: #333;
+}
+.text{
+    margin-top: 0;
+    font-size: 20px;
+    font-family: 'Roboto Condensed Light';
+    text-align: justify;
+}
+.p-black{
+    color: #333;
+    font-size: 24px;
+}
+
+
+/* constraints */
+#info-finals p{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Condensed Bold';
+    line-height: 13px;
+    text-transform: uppercase;
+}
+.maintence{
+    height: 100%;
+    width: 100%;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed Bold';
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+/* Buttons */
+.bt-ticket{
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    background-color: #d4d41b;
+    color: #015da0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto Condensed Regular';
+    text-transform: uppercase;
+}
+.bt-ticket:hover{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #015da0;
+    color: white;
+}
+
+
+
+
+/* content alignment */
+.align-main{
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1400px;
+    padding: 0 0.5% 0 0.5%;
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+}
+.align-section{
+    margin: 0 0.5% 0 0.5%;
+    width: 32.33%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.center-al-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center-al-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Blocks Contents */
+.block-content{
+    height: 100%;
+    width: 100%;
+}
+.content-1{
+    height: 100%;
+    width: 100%;
+    background-image: url("images/bg-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-2{
+    height: 100%;
+    width: 100%;
+    display: table;
+    background-color: rgba(255, 255, 255, 1);
+}
+.content-4{
+    height: 120%;
+    width: 100%;
+    display: table;
+    background-color: rgba(255, 255, 255, 1);
+}
+.content-5{
+    height: 100%;
+    width: 100%;
+    display: table;
+    background-image: url("images/bg-04.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-6{
+    padding: 5% 0 5% 0;
+    height: 30%;
+    width: 100%;
+    display: table;
+    background-color: #00142a;
+}
+
+
+
+
+
+/* Content 1 */
+.bc01-info{
+    width: 100%;
+    height: 14%;
+    display: table;
+    top: 30%;
+    position: relative;
+}
+.bc01-logo{
+    width: 32.33%;
+    margin: 0 auto;
+    height: 30%;
+    position: relative;
+    top: 15%;
+}
+#logo-uefa{
+    width: 70%;
+}
+#logo-team{
+    width: 70%;
+}
+.bc01-team-name{
+    width: 70%;
+    height: 100%;
+    float:left;
+}
+.bc01-team-emblem{
+    width: 30%;
+    height: 100%;
+    float: left; 
+}
+#bt-bc-01{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+}
+
+
+
+
+
+/* Content 2 */
+.bc02-al-title{
+    display: table;
+    float: left;
+    margin-top: 50px;
+}
+.bc02-logo{
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+.bc02-al-title p{
+    display: inline;
+    font-family: 'Roboto Condensed Bold';
+    font-size: 30px;
+}
+.bc02-al-infoStadium{
+    display: table;
+    clear: both;
+    float: right;
+    margin-right: 0.5%;
+}
+.bc02-al-infoStadium label{
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Roboto Condensed Light';
+    float: right;
+}
+.bc02-al-infoStadium p{
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Roboto Condensed Regular';
+    clear: both;
+    text-align: right;
+}
+.bc02-abs{
+    clear: both;
+    width: 100%;
+    height: 480px; 
+    margin-bottom: 10%;
+}
+.bc02-abs-img{
+    padding-bottom: 1.5%;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+}
+.bc02-abs-img2{
+    padding-top: 1.5%;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+}
+.bc02-abs-stadium{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.img-resize-box{
+    height: 100%;
+    cursor: pointer;
+}
+.mainImg-resize-box{
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+/* Content 4 */
+.bc03-bg{
+    width: 100%;
+    height: 30%;
+    float: left;
+    background-image: url('images/bg-03.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bc03-content{
+    width: 100%;
+    height: 70%;
+    display: table;
+    float: left;
+    padding-bottom: 3%;
+    background-color: rgba(255, 255, 255, 1);
+}
+.bc03-journey-logo{
+    width: 100%;
+    height: 20%;
+}
+.journey-img-box{
+    height: 50%;
+}
+.bc03-journey{
+    width: 100%;
+    display: table;
+}
+.bc03-matches{
+    width: 100%;
+    height: 60px;
+    background-color: #e6e6e6;
+    margin-bottom: 15px;
+    border-left: 10px solid red;
+    cursor: pointer;
+}
+.bc03-matches:hover{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #c6c6c6;
+    border-left-color: orange;
+}
+.bc03-matches-resul{
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+.bc03-matches-resul p{
+    font-size: 20px;
+    color: #333;
+    font-family: 'Roboto Condensed Regular';
+    text-transform: uppercase;
+}
+.bc03-matches-opo{
+    float: left;
+    height: 100%;
+    width: 80%;
+}
+.bc03-matches-opo p{
+    font-size: 20px;
+    color: #333;
+    font-family: 'Roboto Condensed Regular';
+    text-transform: uppercase;
+}
+.bc03-history-side{
+    width: 50%;
+    display: table;
+    float: left;
+}
+.bc03-history-info{
+    width: 100%;
+    height: 150px;
+    float: left;
+}
+.bc03-history-info label{
+    font-size: 18px;
+    color: #6f6f6f;
+    font-family: 'Roboto Condensed Light';
+    text-transform: uppercase; 
+}
+.bc03-history-info p{
+    font-size: 30px;
+    color: #333;
+    font-family: 'Roboto Condensed Regular';
+    text-transform: uppercase; 
+}
+
+
+
+
+
+/* Content 5 */
+.bc05-header{
+    margin-top: 5%;
+    width: 100%;
+    height: 200px;
+}
+.bc05-header p {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    font-family: 'Roboto Condensed Light';
+    text-transform: uppercase; 
+}
+.bc05-header span{
+    margin: 0;
+    color: white;
+}
+.bc05-header h2{
+    margin-bottom: 10px;
+}
+.bc05-content{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bc05-content-group{
+    height: 500px;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom:  5%;
+}
+.bc05-content-player{
+    height: 60%;
+    width: 100%;
+    float: left;
+}
+.bc05-content-info{
+    height: 200px;
+    width: 100%;
+    display: table;
+    float: left;
+    background-color: aqua;
+}
+.ronaldo{
+    background-image: url('images/ronaldo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.salah{
+    background-image: url('images/salah.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bc05-info-personal{
+    padding: 10px 0 10px 0;
+    width: 100%;
+    display: table;
+    padding: 10px;
+    float: left;
+    position: relative;
+    background-color: #015da0;
+}
+.bc05-info-personal p{
+    font-size: 18px;
+    margin: 0;
+    float: right;
+    color: white;
+    font-family: 'Roboto Condensed Light';
+    text-transform: capitalize; 
+}
+.bc05-info-personal span{
+    font-size: 24px;
+    margin: 0;
+    float: right;
+    color: white;
+    font-family: 'Roboto Condensed Regular';
+    text-transform: uppercase; 
+}
+.bc05-info-stats{
+    padding: 10px 0 10px 0;
+    width: 100%;
+    display: table;
+    padding: 10px;
+    float: left;
+    background-color: white;
+}
+.bc05-flags{
+    position: absolute;
+    height: 30%;
+    top: 40%;
+    left: 10%;
+}
+.bc05-stats-side{
+    width: 50%;
+    display: table;
+    float: left;
+}
+.bc05-stats-info{
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+.bc05-stats-info label{
+    font-size: 12px;
+    color: #6f6f6f;
+    font-family: 'Roboto Condensed Light';
+    text-transform: uppercase; 
+}
+.bc05-stats-info p{
+    font-size: 18px;
+    color: #333;
+    font-family: 'Roboto Condensed Regular';
+    text-transform: uppercase; 
+}
+
+
+
+
+
+/* content 6 */
+.bc06-side{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.uefa{
+    background-image: url('images/emblem-uefa.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bc06-ticket{
+    display: table;
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto Condensed Regular';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    padding: 3% 0 3% 0;
+    background-color: #00142a;
+    color: white;
+    font-family: 'Roboto Condensed Regular';
+    text-transform: uppercase;
+    font-size: 14px;
+}
+footer p{
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
