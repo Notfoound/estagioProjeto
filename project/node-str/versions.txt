@@ -31,7 +31,8 @@ Versão Anteriores:
 0.2.1 	- Criação da API e CRUD finalizados
 0.2.2 	- Dados inseridos
 0.3	- Todas as tarefas do Business value - 80 foram finalizadas.
+0.4	- Todas as tarefas do Business value - 50 foram finalizadas.
 
-Versão Atual: 0.3.0
-Versão em Desenvolvimento: 0.3.1 
+Versão Atual: 0.4.0
+Versão em Desenvolvimento: 0.5.1
 

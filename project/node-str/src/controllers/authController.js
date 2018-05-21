@@ -54,11 +54,8 @@ exports.putPurchased = (req, res) => {
 }
 
 exports.put = (req, res, next) => {
-    const id = req.params.id;
-    res.status(200).send({
-        id: id,
-        item: req.body
-    });
+    //const id = req.params.id;
+    res.status(200).send(req.body);
 };
 
 exports.remove = (req, res) => {
