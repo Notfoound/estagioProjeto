@@ -1,8 +1,8 @@
-'use strict';
-
+//imports
 const mongoose = require('mongoose');
 const User = mongoose.model('User');
 
+//métodos
 exports.get = (req, res) =>{
     User
     .find({})
@@ -42,25 +42,6 @@ exports.post = (req, res, next) => {
 exports.putPurchased = (req, res) => {
     User
     .findOneAndUpdate(req.params.name, {
-        $set: {
-            purchased: req.body.purchased
-        }
-    })
-    .then(data => {
-        res.status(200).send(data);
-    }).catch(e => {
-        res.status(400).send(e);
-    });
-}
-
-exports.put = (req, res, next) => {
-    //const id = req.params.id;
-    res.status(200).send(req.body);
-};
-
-exports.remove = (req, res) => {
-    User
-    .findOneAndRemove(req.params.name, {
         $set: {
             purchased: req.body.purchased
         }

@@ -6,7 +6,7 @@ Vue.component('login', {
         //'<form method="" action="">'+
             '<input type="text" class="form-control" id="formUser" name="user" placeholder="User" required/>'+
             '<input type="password" class="form-control"  name="pass" placeholder="Password" required />'+
-            '<input type="submit" id="bt-sub" onclick="engineLG.variables.axios()" class="bt-ticket" value="SUBMIT" />' +
+            '<input type="submit" id="bt-sub" onclick="engineLG.variables.login()" class="bt-ticket" value="SUBMIT" />' +
         //'</form>' +
     '</div>'
 })
@@ -24,20 +24,34 @@ new Vue({
     }
 })
 
+// Iniciando Firebase
+var config = {
+    apiKey: "AIzaSyDfVoxXZ99_WZLk_sJz9G3GnCdEOBs-gJc",
+    authDomain: "estagio-2018.firebaseapp.com",
+    databaseURL: "https://estagio-2018.firebaseio.com",
+    projectId: "estagio-2018",
+    storageBucket: "estagio-2018.appspot.com",
+    messagingSenderId: "751571535533"
+  };
+firebase.initializeApp(config);
+
+var actionCodeSettings = {
+    url: 'http://localhost:3000/auth/',
+    handleCodeInApp: true
+}
+
 var engineLG = engineLG || {}
 
 engineLG.variables = {
-   axios: function(){
+   login: function(){
+    let email = document.getElementById("formUser").value; //descobrindo o email do usuario
 
-        let data = document.getElementById("formUser").value;
-        let url = "http://localhost:3000/auth/" + data;
-
-        var context = this;
-        console.log(data);
-        console.log(url);
-        axios.get(url).then((req) =>{
-            context.message = true; 
-            console.log(req.data);  
+    firebase.auth().sendSignInLinkToEmail(email, actionCodeSettings)
+        .then(function() {
+            console.log("Form de login enviado")
         })
+        .catch(function(error){
+            console.log("Erro ao enviar dados de login: " + error.message)
+        });
     }
 }
